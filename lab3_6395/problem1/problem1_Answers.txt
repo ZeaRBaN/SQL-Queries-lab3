@@ -1,0 +1,16 @@
+QUESTION 1
+
+#1451 - Cannot delete or update a parent row: a foreign key constraint fails 
+(`company`.`department`, CONSTRAINT `department_ibfk_1` FOREIGN KEY (`mrg_ssn`) REFERENCES `employee` (`ssn`))
+
+--------------------------------------------------------------------------------------------------------------------
+QUESTION 2
+
+#1452 - Cannot add or update a child row: a foreign key constraint fails
+ (`company`.`project`, CONSTRAINT `project_ibfk_1` FOREIGN KEY (`dno`) REFERENCES `department` (`dnumber`))
+
+
+ --------------------------------------------------------------------------------------------------------------------
+QUESTION 3
+
+We cant insert data in 2 tables REFERENCES each other with no null so we need to remove any relation first then insert data and make relation for the tables after that.
