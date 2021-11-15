@@ -3,11 +3,15 @@ QUESTION 1
 #1451 - Cannot delete or update a parent row: a foreign key constraint fails 
 (`company`.`department`, CONSTRAINT `department_ibfk_1` FOREIGN KEY (`mrg_ssn`) REFERENCES `employee` (`ssn`))
 
+we cannot delete or update a parent because there is a foregin keyn mrg_ssn references on ssn
+
 --------------------------------------------------------------------------------------------------------------------
 QUESTION 2
 
 #1452 - Cannot add or update a child row: a foreign key constraint fails
  (`company`.`project`, CONSTRAINT `project_ibfk_1` FOREIGN KEY (`dno`) REFERENCES `department` (`dnumber`))
+
+we cannot add or update a child because foreign key dno references on dnumber and there is no value in dnumber equal to what inserted
 
 
  --------------------------------------------------------------------------------------------------------------------
