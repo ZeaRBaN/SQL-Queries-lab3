@@ -221,7 +221,7 @@ SELECT * FROM member WHERE join_date BETWEEN '1995-10-1' AND '2019-10-1';
 
 SELECT * 
 FROM publisher,book	 
-WHERE book.pub_id=publisher.pub_id AND publisher.name= 'Oxford' AND book.price BETWEEN '10' AND '20' ;
+WHERE book.pub_id=publisher.pub_id AND publisher.name= 'Oxford' AND book.price BETWEEN '15' AND '20' ;
 
 SELECT book.title
 FROM book,borrowing_book,member 

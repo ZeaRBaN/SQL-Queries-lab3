@@ -7,9 +7,13 @@ VALUES ('3', 'compu', '10', '2020-11-10');
 ALTER TABLE company.department ADD FOREIGN KEY (mrg_ssn)
 REFERENCES company.employee(ssn);
 
+ALTER TABLE company.employee ADD FOREIGN KEY (dno)
+REFERENCES company.department(department);
+
 DELETE FROM company.employee;
 
 ALTER TABLE company.project ADD FOREIGN KEY (dno)
 REFERENCES company.department(department);
+
 
 INSERT INTO company.`project`(`pnumber`, `pname`, `plocation`, `dno`) VALUES ('4','test','anywhere','6');
